@@ -1,0 +1,89 @@
+/* ============================================
+   NEUROSTACK - CONTACT PAGE STYLES
+   Contact cards and contact-specific elements
+   ============================================ */
+
+/* ============================================
+   CONTACT HEADER
+   ============================================ */
+
+.contact-header {
+    padding: 100px 0 40px;
+    background: radial-gradient(ellipse at 70% 30%, var(--glow) 0%, transparent 70%);
+}
+
+.contact-header-content {
+    text-align: center;
+}
+
+.contact-title {
+    font-family: var(--font-display);
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--text);
+    margin-top: 20px;
+}
+
+.contact-subtitle {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 16px auto 0;
+}
+
+/* ============================================
+   CONTACT CARDS SECTION
+   ============================================ */
+
+.contact-cards {
+    padding: 40px 0 80px;
+    background: var(--bg);
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+/* Contact card styles are in components.css */
+
+/* ============================================
+   CONTACT PAGE RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .contact-title {
+        font-size: 2.2rem;
+    }
+
+    .contact-grid {
+        gap: 20px;
+    }
+
+    .contact-card {
+        padding: 32px 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-title {
+        font-size: 1.8rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-card {
+        padding: 28px 20px;
+    }
+
+    .contact-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.6rem;
+    }
+}

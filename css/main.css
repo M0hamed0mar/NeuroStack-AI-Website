@@ -1,0 +1,28 @@
+/* ============================================
+   NEUROSTACK - MAIN CSS
+   Imports all CSS files in correct order
+   ============================================ */
+
+/* 1. Variables & Theme (must be first) */
+@import url('variables.css');
+
+/* 2. Base styles (reset, typography) */
+@import url('base.css');
+
+/* 3. Layout (sidebar, header, footer, bottom-nav) */
+@import url('layout.css');
+
+/* 4. Components (buttons, cards, tags) */
+@import url('components.css');
+
+/* 5. Page specific styles */
+@import url('pages/home.css');
+@import url('pages/about.css');
+@import url('pages/roadmap.css');
+@import url('pages/projects.css');
+@import url('pages/tech-outcomes.css');
+@import url('pages/contact.css');
+@import url('pages/why-us.css');
+
+/* 6. Responsive styles (must be last) */
+@import url('responsive.css');

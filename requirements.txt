@@ -1,0 +1,2 @@
+# Static website - no dependencies
+# Open index.html in any browser

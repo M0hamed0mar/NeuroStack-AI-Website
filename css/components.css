@@ -1,0 +1,356 @@
+/* ============================================
+   NEUROSTACK - COMPONENTS STYLES
+   Buttons, cards, tags, and reusable elements
+   ============================================ */
+
+/* ============================================
+   BUTTONS
+   Fast transitions, clean design
+   ============================================ */
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 12px 28px;
+    border-radius: var(--radius-md);
+    font-size: 0.88rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    border: none;
+    font-family: var(--font-sans);
+    text-decoration: none;
+}
+
+/* Primary Button - Gradient */
+.btn-primary {
+    background: var(--gradient);
+    color: white;
+    box-shadow: 0 2px 12px var(--glow-hover);
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 20px var(--glow-hover);
+}
+
+/* Outline Button */
+.btn-outline {
+    background: transparent;
+    color: var(--text);
+    border: 1.5px solid var(--border);
+}
+
+.btn-outline:hover {
+    border-color: var(--primary);
+    color: var(--primary);
+    background: var(--glow);
+}
+
+/* Small Button */
+.btn-sm {
+    padding: 8px 20px;
+    font-size: 0.8rem;
+}
+
+/* Full Width Button */
+.btn-full {
+    width: 100%;
+}
+
+/* ============================================
+   CARDS
+   For stats, why-us, values, etc.
+   ============================================ */
+
+.card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    transition: all var(--transition-fast);
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow-md);
+}
+
+/* Stat Card */
+.stat-card {
+    text-align: center;
+    padding: 24px 16px;
+    border-radius: var(--radius-md);
+    background: var(--card);
+    border: 1px solid var(--border);
+    transition: all var(--transition-fast);
+}
+
+.stat-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow-md);
+}
+
+.stat-number {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    font-weight: 800;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 6px;
+}
+
+.stat-label {
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+/* Value Card (for About page) */
+.value-card {
+    padding: 32px 24px;
+    border-radius: var(--radius-lg);
+    background: var(--card);
+    border: 1px solid var(--border);
+    transition: all var(--transition-fast);
+    text-align: center;
+}
+
+.value-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow-md);
+}
+
+.value-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: var(--radius-md);
+    background: var(--glow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: var(--primary);
+    font-size: 1.8rem;
+}
+
+.value-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text);
+}
+
+.value-card p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* ============================================
+   TAGS
+   For project technologies, module labels
+   ============================================ */
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 4px 12px;
+    border-radius: 100px;
+    background: var(--glow);
+    color: var(--primary);
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+.mod-tag {
+    padding: 6px 14px;
+    border-radius: 100px;
+    background: var(--glow);
+    color: var(--primary);
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 12px;
+}
+
+.project-tags span {
+    padding: 4px 12px;
+    border-radius: 100px;
+    background: var(--glow);
+    color: var(--primary);
+    font-size: 0.7rem;
+    font-weight: 500;
+}
+
+/* ============================================
+   TECH STACK ITEMS
+   ============================================ */
+
+.tech-item {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 100px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    transition: all var(--transition-fast);
+}
+
+.tech-item i {
+    font-size: 1rem;
+    color: var(--primary);
+}
+
+.tech-item:hover {
+    background: var(--gradient);
+    color: white;
+    border-color: transparent;
+    transform: translateY(-2px);
+}
+
+.tech-item:hover i {
+    color: white;
+}
+
+/* ============================================
+   OUTCOME CARDS
+   ============================================ */
+
+.outcome-card {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 20px 24px;
+    border-radius: var(--radius-md);
+    background: var(--card);
+    border: 1px solid var(--border);
+    transition: all var(--transition-fast);
+    font-family: var(--font-display);
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.outcome-card i {
+    font-size: 1.4rem;
+    color: var(--primary);
+}
+
+.outcome-card:hover {
+    background: var(--gradient);
+    color: white;
+    border-color: transparent;
+    transform: translateY(-2px);
+}
+
+.outcome-card:hover i {
+    color: white;
+}
+
+/* ============================================
+   CONTACT CARDS
+   ============================================ */
+
+.contact-card {
+    padding: 40px 32px;
+    border-radius: var(--radius-xl);
+    background: var(--card);
+    border: 1px solid var(--border);
+    text-align: center;
+    transition: all var(--transition-fast);
+}
+
+.contact-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow-lg);
+}
+
+.contact-icon {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background: var(--glow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+    color: var(--primary);
+    font-size: 2rem;
+    transition: all var(--transition-fast);
+}
+
+.contact-card:hover .contact-icon {
+    background: var(--gradient);
+    color: white;
+    transform: scale(1.05);
+}
+
+.contact-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: var(--text);
+}
+
+.contact-card p {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 24px;
+    word-break: break-all;
+}
+
+/* ============================================
+   CTA CARD
+   ============================================ */
+
+.cta-card {
+    text-align: center;
+    padding: 48px;
+    border-radius: var(--radius-xl);
+    background: var(--gradient);
+    color: white;
+}
+
+.cta-card h2 {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: white;
+}
+
+.cta-card p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 24px;
+}
+
+.cta-card .btn {
+    background: white;
+    color: var(--primary);
+}
+
+.cta-card .btn:hover {
+    transform: translateY(-2px);
+}

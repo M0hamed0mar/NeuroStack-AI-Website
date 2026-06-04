@@ -1,0 +1,363 @@
+/* ============================================
+   NEUROSTACK - ROADMAP PAGE STYLES
+   Timeline, phases, modules, progress bar
+   ============================================ */
+
+/* ============================================
+   ROADMAP HEADER
+   ============================================ */
+
+.roadmap-header {
+    padding: 100px 0 40px;
+    background: radial-gradient(ellipse at 70% 30%, var(--glow) 0%, transparent 70%);
+}
+
+.roadmap-header-content {
+    text-align: center;
+}
+
+.roadmap-title {
+    font-family: var(--font-display);
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--text);
+    margin-top: 20px;
+}
+
+.roadmap-subtitle {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 16px auto 0;
+}
+
+/* ============================================
+   PROGRESS BAR (NO active state - only hover)
+   ============================================ */
+
+.roadmap-progress-section {
+    padding: 20px 0 40px;
+    background: var(--bg);
+}
+
+.roadmap-progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    padding: 24px 32px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-sm);
+}
+
+.rp-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+    cursor: pointer;
+}
+
+.rp-item:hover {
+    background: var(--glow);
+    transform: translateY(-1px);
+}
+
+.rp-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--bg3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    transition: all var(--transition-fast);
+}
+
+.rp-item:hover .rp-icon {
+    background: var(--gradient);
+    color: white;
+}
+
+.rp-num {
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--text-muted);
+}
+
+.rp-name {
+    font-size: 0.7rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.rp-line {
+    width: 40px;
+    height: 2px;
+    background: var(--border);
+    flex-shrink: 0;
+}
+
+/* ============================================
+   TIMELINE SECTION
+   ============================================ */
+
+.timeline-section {
+    padding: 20px 0 60px;
+    background: var(--bg);
+}
+
+.timeline-wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+/* Phase Card */
+.phase-card {
+    background: var(--bg2);
+    border-radius: var(--radius-xl);
+    border: 1px solid var(--border);
+    overflow: hidden;
+    transition: all var(--transition-fast);
+}
+
+.phase-card:hover {
+    box-shadow: var(--shadow-md);
+    border-color: var(--border-hover);
+}
+
+.phase-header {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 28px 32px;
+    background: var(--gradient);
+    color: white;
+}
+
+.phase-badge {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.phase-info h2 {
+    font-family: var(--font-display);
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+    color: white;
+}
+
+.phase-info p {
+    opacity: 0.85;
+    font-size: 0.9rem;
+    color: white;
+}
+
+/* Phase Modules */
+.phase-modules {
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+/* Module Card */
+.mod-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    transition: all var(--transition-fast);
+}
+
+.mod-card:hover {
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow-sm);
+}
+
+.mod-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.mod-tag {
+    padding: 6px 14px;
+    border-radius: 100px;
+    background: var(--glow);
+    color: var(--primary);
+    font-size: 0.7rem;
+    font-weight: 600;
+}
+
+.mod-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: var(--radius-md);
+    background: var(--glow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-size: 1.2rem;
+}
+
+.mod-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+    color: var(--text);
+}
+
+/* Module Topics Grid */
+.mod-topics {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+.topic-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.topic-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: var(--radius-sm);
+    background: var(--glow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-size: 0.9rem;
+}
+
+.topic-group h4 {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text);
+}
+
+.topic-group ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.topic-group li {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    position: relative;
+    padding-left: 14px;
+}
+
+.topic-group li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--primary);
+    opacity: 0.6;
+}
+
+/* ============================================
+   ROADMAP CTA
+   ============================================ */
+
+.roadmap-cta {
+    padding: 40px 0 60px;
+    background: var(--bg);
+}
+
+/* ============================================
+   ROADMAP PAGE RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .roadmap-title {
+        font-size: 2.2rem;
+    }
+
+    .mod-topics {
+        grid-template-columns: 1fr;
+    }
+
+    .roadmap-progress {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .rp-line {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .roadmap-title {
+        font-size: 1.8rem;
+    }
+
+    .phase-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+        padding: 24px 20px;
+    }
+
+    .phase-info h2 {
+        font-size: 1.3rem;
+    }
+
+    .phase-modules {
+        padding: 20px;
+    }
+
+    .mod-card {
+        padding: 18px;
+    }
+
+    .mod-card h3 {
+        font-size: 1rem;
+    }
+
+    .rp-item {
+        padding: 6px 10px;
+    }
+
+    .rp-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .rp-name {
+        font-size: 0.6rem;
+    }
+}

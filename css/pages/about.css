@@ -1,0 +1,181 @@
+/* ============================================
+   NEUROSTACK - ABOUT PAGE STYLES
+   Mission, values, coverage, and CTA
+   ============================================ */
+
+/* ============================================
+   ABOUT HERO
+   ============================================ */
+
+.about-hero {
+    padding: 100px 0 60px;
+    background: radial-gradient(ellipse at 70% 30%, var(--glow) 0%, transparent 70%);
+}
+
+.about-hero-content {
+    text-align: center;
+}
+
+.about-title {
+    font-family: var(--font-display);
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--text);
+    margin-top: 20px;
+}
+
+/* ============================================
+   ABOUT MISSION SECTION
+   ============================================ */
+
+.about-mission {
+    padding: 60px 0;
+    background: var(--bg);
+}
+
+.mission-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+}
+
+.mission-text h2 {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: var(--text);
+}
+
+.mission-text p {
+    color: var(--text-secondary);
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.mission-stats {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.mission-stats .stat-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-align: left;
+    padding: 20px;
+}
+
+.mission-stats .stat-card i {
+    font-size: 2rem;
+    color: var(--primary);
+}
+
+.mission-stats .stat-number {
+    font-size: 1.4rem;
+    margin-bottom: 0;
+}
+
+/* ============================================
+   CORE VALUES SECTION
+   ============================================ */
+
+.about-values {
+    padding: 60px 0;
+    background: var(--bg2);
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+}
+
+/* ============================================
+   COVERAGE SECTION
+   ============================================ */
+
+.about-coverage {
+    padding: 60px 0;
+    background: var(--bg);
+}
+
+.coverage-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.coverage-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 16px 20px;
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    transition: all var(--transition-fast);
+}
+
+.coverage-item i {
+    font-size: 1.2rem;
+    color: var(--primary);
+}
+
+.coverage-item span {
+    font-weight: 500;
+    color: var(--text);
+}
+
+.coverage-item:hover {
+    border-color: var(--primary);
+    transform: translateX(2px);
+}
+
+/* ============================================
+   ABOUT CTA
+   ============================================ */
+
+.about-cta {
+    padding: 60px 0;
+}
+
+/* ============================================
+   ABOUT PAGE RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .about-title {
+        font-size: 2.2rem;
+    }
+
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .coverage-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .coverage-grid {
+        grid-template-columns: 1fr;
+    }
+}

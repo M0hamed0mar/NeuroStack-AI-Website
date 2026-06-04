@@ -1,0 +1,212 @@
+/* ============================================
+   NEUROSTACK - WHY US PAGE STYLES
+   ============================================ */
+
+/* Hero Section */
+.why-hero {
+    padding: 100px 0 60px;
+    background: radial-gradient(ellipse at 70% 30%, var(--glow) 0%, transparent 70%);
+}
+
+.why-hero-content {
+    text-align: center;
+}
+
+.why-title {
+    font-family: var(--font-display);
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--text);
+    margin-top: 20px;
+}
+
+.why-subtitle {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 16px auto 0;
+}
+
+/* Reasons Grid - 3 columns */
+.why-reasons {
+    padding: 60px 0;
+    background: var(--bg);
+}
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.reason-card {
+    padding: 32px 28px;
+    border-radius: var(--radius-lg);
+    background: var(--card);
+    border: 1px solid var(--border);
+    transition: all var(--transition-fast);
+}
+
+.reason-card:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow-md);
+}
+
+.reason-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: var(--radius-md);
+    background: var(--glow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    color: var(--primary);
+    font-size: 1.5rem;
+}
+
+.reason-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--text);
+}
+
+.reason-card p {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+/* Stats Banner */
+.why-stats {
+    padding: 40px 0;
+    background: var(--bg2);
+}
+
+.stats-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 48px;
+    padding: 32px 48px;
+    border-radius: var(--radius-xl);
+    background: var(--gradient);
+    color: white;
+}
+
+.stats-banner-item {
+    text-align: center;
+}
+
+.stats-banner-item i {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.stats-banner-number {
+    font-family: var(--font-display);
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.stats-banner-label {
+    font-size: 0.8rem;
+    opacity: 0.9;
+}
+
+.stats-banner-divider {
+    width: 1px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Different Section (What Sets Us Apart) */
+.why-different {
+    padding: 60px 0;
+    background: var(--bg);
+}
+
+.different-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.different-card {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px 24px;
+    border-radius: var(--radius-md);
+    background: var(--card);
+    border: 1px solid var(--border);
+    transition: all var(--transition-fast);
+}
+
+.different-card i {
+    font-size: 1.5rem;
+    color: var(--primary);
+}
+
+.different-card-content h4 {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: var(--text);
+    margin-bottom: 4px;
+}
+
+.different-card-content p {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.different-card:hover {
+    border-color: var(--primary);
+    transform: translateX(4px);
+}
+
+/* CTA Section */
+.why-cta {
+    padding: 60px 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .reasons-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .different-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .why-title {
+        font-size: 2rem;
+    }
+
+    .reasons-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-banner {
+        flex-direction: column;
+        gap: 24px;
+        padding: 32px 24px;
+    }
+
+    .stats-banner-divider {
+        width: 80%;
+        height: 1px;
+    }
+
+    .different-grid {
+        grid-template-columns: 1fr;
+    }
+}

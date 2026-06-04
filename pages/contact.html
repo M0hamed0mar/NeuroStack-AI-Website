@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroStack | Contact - Start Your AI Journey</title>
+    <meta name="description" content="Get in touch with NeuroStack. Start your AI engineering journey today. Contact us via WhatsApp, Email, or Facebook.">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+        <i class="fa-regular fa-sun theme-sun"></i>
+        <i class="fa-regular fa-moon theme-moon"></i>
+    </button>
+
+    <div id="sidebar"></div>
+    <div id="mobileHeader"></div>
+    <div id="bottomNav"></div>
+
+    <main class="main">
+        
+        <section class="contact-header">
+            <div class="container">
+                <div class="contact-header-content">
+                    <div class="section-label">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Get In Touch</span>
+                    </div>
+                    <h1 class="contact-title">Start Your <span class="gradient-text">AI Journey</span></h1>
+                    <p class="contact-subtitle">Ready to become an AI engineer? Reach out today</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-cards">
+            <div class="container">
+                <div class="contact-grid">
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                        <h3>WhatsApp</h3>
+                        <p>+20 122 042 6463</p>
+                        <a href="https://wa.me/201220426463" target="_blank" class="btn btn-primary btn-sm">
+                            Contact
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-regular fa-envelope"></i></div>
+                        <h3>Email</h3>
+                        <p>neurostack.ai.tech@gmail.com</p>
+                        <a href="mailto:neurostack.ai.tech@gmail.com" class="btn btn-primary btn-sm">
+                            Send Email
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon"><i class="fa-brands fa-facebook-f"></i></div>
+                        <h3>Facebook</h3>
+                        <p>NeuroStack AI Academy</p>
+                        <a href="https://www.facebook.com/neuroStackAIacadmy" target="_blank" class="btn btn-primary btn-sm">
+                            Visit
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <div id="footer"></div>
+    </main>
+
+    <script src="../js/theme.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/main.js"></script>
+    
+    <script>
+        fetch('../components/sidebar.html').then(r=>r.text()).then(d=>document.getElementById('sidebar').innerHTML=d);
+        fetch('../components/mobile-header.html').then(r=>r.text()).then(d=>document.getElementById('mobileHeader').innerHTML=d);
+        fetch('../components/bottom-nav.html').then(r=>r.text()).then(d=>document.getElementById('bottomNav').innerHTML=d);
+        fetch('../components/footer.html').then(r=>r.text()).then(d=>document.getElementById('footer').innerHTML=d);
+    </script>
+</body>
+</html>

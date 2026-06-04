@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroStack | Roadmap - AI Engineering Curriculum</title>
+    <meta name="description"
+        content="Complete AI Engineering curriculum: 5-phase journey from Python basics to Agentic AI. 12 professional modules with hands-on projects.">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+        <i class="fa-regular fa-sun theme-sun"></i>
+        <i class="fa-regular fa-moon theme-moon"></i>
+    </button>
+
+    <div id="sidebar"></div>
+    <div id="mobileHeader"></div>
+    <div id="bottomNav"></div>
+
+    <main class="main">
+
+        <section class="roadmap-header">
+            <div class="container">
+                <div class="roadmap-header-content">
+                    <div class="section-label">
+                        <i class="fa-solid fa-road"></i>
+                        <span>The Roadmap</span>
+                    </div>
+                    <h1 class="roadmap-title">AI Engineering <span class="gradient-text">Curriculum</span></h1>
+                    <p class="roadmap-subtitle">A structured 5-phase journey from Python basics to Agentic AI</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="roadmap-progress-section">
+            <div class="container">
+                <div class="roadmap-progress">
+                    <div class="rp-item" data-phase="1">
+                        <div class="rp-icon"><i class="fa-solid fa-code"></i></div><span class="rp-num">01</span><span
+                            class="rp-name">Foundations</span>
+                    </div>
+                    <div class="rp-line"></div>
+                    <div class="rp-item" data-phase="2">
+                        <div class="rp-icon"><i class="fa-solid fa-chart-line"></i></div><span
+                            class="rp-num">02</span><span class="rp-name">Data Science</span>
+                    </div>
+                    <div class="rp-line"></div>
+                    <div class="rp-item" data-phase="3">
+                        <div class="rp-icon"><i class="fa-solid fa-microchip"></i></div><span
+                            class="rp-num">03</span><span class="rp-name">AI Core</span>
+                    </div>
+                    <div class="rp-line"></div>
+                    <div class="rp-item" data-phase="4">
+                        <div class="rp-icon"><i class="fa-solid fa-robot"></i></div><span class="rp-num">04</span><span
+                            class="rp-name">Generative AI</span>
+                    </div>
+                    <div class="rp-line"></div>
+                    <div class="rp-item" data-phase="5">
+                        <div class="rp-icon"><i class="fa-solid fa-brain"></i></div><span class="rp-num">05</span><span
+                            class="rp-name">Agentic AI</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="timeline-section">
+            <div class="container">
+                <div class="timeline-wrap">
+
+                    <!-- Phase 1: Foundations -->
+                    <div class="phase-card" data-phase="1">
+                        <div class="phase-header">
+                            <div class="phase-badge">01</div>
+                            <div class="phase-info">
+                                <h2>Foundations</h2>
+                                <p>Python programming and AI fundamentals</p>
+                            </div>
+                        </div>
+                        <div class="phase-modules">
+                            <div class="mod-card">
+                                <div class="mod-card-header"><span class="mod-tag">Module 01</span>
+                                    <div class="mod-icon"><i class="fa-solid fa-microchip"></i></div>
+                                </div>
+                                <h3>Introduction to Artificial Intelligence</h3>
+                                <div class="mod-topics">
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-brain"></i></div>
+                                        <h4>AI Fundamentals</h4>
+                                        <ul>
+                                            <li>What is Artificial Intelligence</li>
+                                            <li>History and Evolution of AI</li>
+                                            <li>Types of AI: Narrow, General, Super</li>
+                                        </ul>
+                                    </div>
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-chart-simple"></i></div>
+                                        <h4>AI Applications</h4>
+                                        <ul>
+                                            <li>AI Applications in Industry</li>
+                                        </ul>
+                                    </div>
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+                                        <h4>AI Ethics</h4>
+                                        <ul>
+                                            <li>Ethics and Responsible AI</li>
+                                        </ul>
+                                    </div>
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-chart-line"></i></div>
+                                        <h4>AI Future</h4>
+                                        <ul>
+                                            <li>Future Trends in AI</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mod-card">
+                                <div class="mod-card-header"><span class="mod-tag">Module 02</span>
+                                    <div class="mod-icon"><i class="fa-brands fa-python"></i></div>
+                                </div>
+                                <h3>Python & Object-Oriented Programming</h3>
+                                <div class="mod-topics">
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-brands fa-python"></i></div>
+                                        <h4>Python Basics</h4>
+                                        <ul>
+                                            <li>Environment Setup</li>
+                                            <li>Variables and Data Types</li>
+                                            <li>Strings, Lists, Tuples, Sets, Dictionaries</li>
+                                            <li>Control Flow and Loops</li>
+                                            <li>Functions and Lambda</li>
+                                            <li>File Handling</li>
+                                        </ul>
+                                    </div>
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                                        <h4>OOP Concepts</h4>
+                                        <ul>
+                                            <li>Object-Oriented Programming</li>
+                                            <li>Classes and Objects</li>
+                                            <li>Inheritance and Polymorphism</li>
+                                            <li>Encapsulation</li>
+                                        </ul>
+                                    </div>
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-bolt"></i></div>
+                                        <h4>Advanced Python</h4>
+                                        <ul>
+                                            <li>Decorators and Generators</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phase 2: Data Science -->
+                    <div class="phase-card" data-phase="2">
+                        <div class="phase-header">
+                            <div class="phase-badge">02</div>
+                            <div class="phase-info">
+                                <h2>Data Science</h2>
+                                <p>Data manipulation, visualization, and preprocessing</p>
+                            </div>
+                        </div>
+                        <div class="phase-modules">
+                            <div class="mod-card">
+                                <div class="mod-card-header"><span class="mod-tag">Module 03</span>
+                                    <div class="mod-icon"><i class="fa-solid fa-table"></i></div>
+                                </div>
+                                <h3>Exploratory Data Analysis with NumPy & Pandas</h3>
+                                <div class="mod-topics">
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-calculator"></i></div>
+                                        <h4>NumPy</h4>
+                                        <ul>
+                                            <li>Arrays and Operations</li>
+                                            <li>Slicing and Reshaping</li>
+                                            <li>Broadcasting</li>
+                                        </ul>
+                                    </div>
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-database"></i></div>
+                                        <h4>Pandas</h4>
+                                        <ul>
+                                            <li>Series and DataFrames</li>
+                                            <li>Data Loading and Exporting</li>
+                                            <li>Missing Data Handling</li>
+                                            <li>Grouping and Aggregation</li>
+                                            <li>Merging and Joining</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mod-card">
+                                <div class="mod-card-header"><span class="mod-tag">Module 04</span>
+                                    <div class="mod-icon"><i class="fa-solid fa-chart-line"></i></div>
+                                </div>
+                                <h3>Data Visualization</h3>
+                                <div class="mod-topics">
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-chart-simple"></i></div>
+                                        <h4>Visualization Libraries</h4>
+                                        <ul>
+                                            <li>Matplotlib Basics</li>
+                                            <li>Seaborn for Statistical Plots</li>
+                                            <li>Plotly Interactive Charts</li>
+                                        </ul>
+                                    </div>
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-display"></i></div>
+                                        <h4>Dashboard Design</h4>
+                                        <ul>
+                                            <li>Dashboard Design Principles</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mod-card">
+                                <div class="mod-card-header"><span class="mod-tag">Module 05</span>
+                                    <div class="mod-icon"><i class="fa-solid fa-gears"></i></div>
+                                </div>
+                                <h3>Data Preprocessing & ETL</h3>
+                                <div class="mod-topics">
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-wrench"></i></div>
+                                        <h4>Data Preparation</h4>
+                                        <ul>
+                                            <li>Feature Engineering</li>
+                                            <li>Feature Selection</li>
+                                            <li>Cross Validation</li>
+                                        </ul>
+                                    </div>
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-pipeline"></i></div>
+                                        <h4>Data Pipelines</h4>
+                                        <ul>
+                                            <li>Building Data Pipelines</li>
+                                            <li>Scaling and Normalization</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phase 3: AI Core -->
+                    <div class="phase-card" data-phase="3">
+                        <div class="phase-header">
+                            <div class="phase-badge">03</div>
+                            <div class="phase-info">
+                                <h2>AI Core</h2>
+                                <p>Machine Learning, Deep Learning, and Computer Vision</p>
+                            </div>
+                        </div>
+                        <div class="phase-modules">
+                            <div class="mod-card">
+                                <div class="mod-card-header"><span class="mod-tag">Module 06</span>
+                                    <div class="mod-icon"><i class="fa-solid fa-chart-line"></i></div>
+                                </div>
+                                <h3>Machine Learning</h3>
+                                <div class="mod-topics">
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                                        <h4>Supervised Learning</h4>
+                                        <ul>
+                                            <li>Regression Algorithms</li>
+                                            <li>Classification Algorithms</li>
+                                            <li>Model Evaluation Metrics</li>
+                                        </ul>
+                                    </div>
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-chart-pie"></i></div>
+                                        <h4>Unsupervised Learning</h4>
+                                        <ul>
+                                            <li>Clustering Techniques</li>
+                                            <li>Dimensionality Reduction</li>
+                                        </ul>
+                                    </div>
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-sliders"></i></div>
+                                        <h4>Advanced ML</h4>
+                                        <ul>
+                                            <li>Hyperparameter Tuning</li>
+                                            <li>Ensemble Methods</li>
+                                            <li>Cross Validation Strategies</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mod-card">
+                                <div class="mod-card-header"><span class="mod-tag">Module 07</span>
+                                    <div class="mod-icon"><i class="fa-solid fa-brain"></i></div>
+                                </div>
+                                <h3>Deep Learning</h3>
+                                <div class="mod-topics">
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-network-wired"></i></div>
+                                        <h4>Neural Networks</h4>
+                                        <ul>
+                                            <li>ANN Architecture</li>
+                                            <li>Activation Functions</li>
+                                            <li>Backpropagation</li>
+                                            <li>Optimization Algorithms</li>
+                                        </ul>
+                                    </div>
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-cubes"></i></div>
+                                        <h4>Frameworks</h4>
+                                        <ul>
+                                            <li>TensorFlow</li>
+                                            <li>PyTorch</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mod-card">
+                                <div class="mod-card-header"><span class="mod-tag">Module 08</span>
+                                    <div class="mod-icon"><i class="fa-solid fa-eye"></i></div>
+                                </div>
+                                <h3>Computer Vision</h3>
+                                <div class="mod-topics">
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-image"></i></div>
+                                        <h4>CV Techniques</h4>
+                                        <ul>
+                                            <li>CNN Architectures</li>
+                                            <li>Image Classification</li>
+                                            <li>Object Detection</li>
+                                            <li>Transfer Learning</li>
+                                            <li>Image Segmentation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phase 4: Generative AI -->
+                    <div class="phase-card" data-phase="4">
+                        <div class="phase-header">
+                            <div class="phase-badge">04</div>
+                            <div class="phase-info">
+                                <h2>Generative AI</h2>
+                                <p>NLP and Large Language Models</p>
+                            </div>
+                        </div>
+                        <div class="phase-modules">
+                            <div class="mod-card">
+                                <div class="mod-card-header"><span class="mod-tag">Module 09</span>
+                                    <div class="mod-icon"><i class="fa-regular fa-message"></i></div>
+                                </div>
+                                <h3>Natural Language Processing</h3>
+                                <div class="mod-topics">
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-language"></i></div>
+                                        <h4>Text Processing</h4>
+                                        <ul>
+                                            <li>Tokenization</li>
+                                            <li>Word Embeddings (Word2Vec, GloVe)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-diagram-project"></i></div>
+                                        <h4>Sequence Models</h4>
+                                        <ul>
+                                            <li>RNN, LSTM, GRU</li>
+                                            <li>Transformers Architecture</li>
+                                        </ul>
+                                    </div>
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-robot"></i></div>
+                                        <h4>Modern NLP</h4>
+                                        <ul>
+                                            <li>Hugging Face Tools</li>
+                                            <li>Text Classification</li>
+                                            <li>Text Generation</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mod-card">
+                                <div class="mod-card-header"><span class="mod-tag">Module 10</span>
+                                    <div class="mod-icon"><i class="fa-solid fa-language"></i></div>
+                                </div>
+                                <h3>Large Language Models</h3>
+                                <div class="mod-topics">
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-pen"></i></div>
+                                        <h4>LLM Engineering</h4>
+                                        <ul>
+                                            <li>Prompt Engineering</li>
+                                            <li>LLM APIs Integration</li>
+                                            <li>Fine-Tuning Basics</li>
+                                        </ul>
+                                    </div>
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-cubes"></i></div>
+                                        <h4>Advanced LLM</h4>
+                                        <ul>
+                                            <li>RAG Systems</li>
+                                            <li>AI Agents Design</li>
+                                            <li>LangChain Framework</li>
+                                            <li>LangGraph Workflows</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Phase 5: Agentic AI -->
+                    <div class="phase-card" data-phase="5">
+                        <div class="phase-header">
+                            <div class="phase-badge">05</div>
+                            <div class="phase-info">
+                                <h2>Agentic AI</h2>
+                                <p>Autonomous AI systems and workflow automation</p>
+                            </div>
+                        </div>
+                        <div class="phase-modules">
+                            <div class="mod-card">
+                                <div class="mod-card-header"><span class="mod-tag">Module 11</span>
+                                    <div class="mod-icon"><i class="fa-solid fa-robot"></i></div>
+                                </div>
+                                <h3>AI Agents & RAG Systems</h3>
+                                <div class="mod-topics">
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-database"></i></div>
+                                        <h4>RAG Architecture</h4>
+                                        <ul>
+                                            <li>Vector Databases</li>
+                                            <li>Document Chunking</li>
+                                            <li>Embedding Models</li>
+                                            <li>Retrieval Strategies</li>
+                                        </ul>
+                                    </div>
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-users"></i></div>
+                                        <h4>Agent Design</h4>
+                                        <ul>
+                                            <li>Agent Architecture</li>
+                                            <li>Tool Use and Function Calling</li>
+                                            <li>Memory Systems</li>
+                                            <li>Multi-Agent Orchestration</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mod-card">
+                                <div class="mod-card-header"><span class="mod-tag">Module 12</span>
+                                    <div class="mod-icon"><i class="fa-solid fa-cloud-arrow-up"></i></div>
+                                </div>
+                                <h3>Capstone & Deployment</h3>
+                                <div class="mod-topics">
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-server"></i></div>
+                                        <h4>Production AI</h4>
+                                        <ul>
+                                            <li>FastAPI for AI Services</li>
+                                            <li>Model Deployment</li>
+                                            <li>Cloud Integration</li>
+                                        </ul>
+                                    </div>
+                                    <div class="topic-group">
+                                        <div class="topic-icon"><i class="fa-solid fa-briefcase"></i></div>
+                                        <h4>Final Project</h4>
+                                        <ul>
+                                            <li>End-to-End AI System</li>
+                                            <li>Portfolio Building</li>
+                                            <li>Industry Best Practices</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="roadmap-cta">
+            <div class="container">
+                <div class="cta-card">
+                    <h2>Ready to Start Your AI Journey?</h2>
+                    <p>Join NeuroStack and master AI engineering from scratch to Agentic AI</p>
+                    <a href="https://wa.me/201220426463" target="_blank" class="btn btn-primary">
+                        Start Learning
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div id="footer"></div>
+    </main>
+
+    <script src="../js/theme.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script>
+        fetch('../components/sidebar.html').then(r => r.text()).then(d => document.getElementById('sidebar').innerHTML = d);
+        fetch('../components/mobile-header.html').then(r => r.text()).then(d => document.getElementById('mobileHeader').innerHTML = d);
+        fetch('../components/bottom-nav.html').then(r => r.text()).then(d => document.getElementById('bottomNav').innerHTML = d);
+        fetch('../components/footer.html').then(r => r.text()).then(d => document.getElementById('footer').innerHTML = d);
+    </script>
+</body>
+
+</html>

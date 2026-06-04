@@ -1,0 +1,482 @@
+/* ============================================
+   NEUROSTACK - RESPONSIVE STYLES
+   Mobile-first approach, clean breakpoints
+   ============================================ */
+
+/* ============================================
+   TABLET (max-width: 1024px)
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .section {
+        padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+
+    /* Roadmap */
+    .mod-topics {
+        grid-template-columns: 1fr;
+    }
+
+    .roadmap-progress {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .rp-line {
+        display: none;
+    }
+
+    /* Projects */
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* About */
+    .values-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .coverage-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Why Us */
+    .reasons-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .different-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Tech & Outcomes */
+    .outcomes-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Contact */
+    .contact-grid {
+        gap: 20px;
+    }
+
+    .contact-card {
+        padding: 32px 24px;
+    }
+}
+
+/* ============================================
+   MOBILE (max-width: 768px)
+   ============================================ */
+
+@media (max-width: 768px) {
+
+    /* Hide sidebar on mobile */
+    .sidebar {
+        display: none;
+    }
+
+    /* Show mobile header */
+    .mob-header {
+        display: flex;
+    }
+
+    /* Main content adjustments */
+    .main {
+        margin-left: 0;
+        padding-top: var(--header-height);
+        padding-bottom: var(--bottom-nav-height);
+    }
+
+    /* Show bottom navigation on mobile */
+    .bottom-nav {
+        display: flex;
+    }
+
+    /* Hero section */
+    .hero-section {
+        min-height: auto;
+        padding: 40px 0 60px;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-badge {
+        font-size: 0.7rem;
+        padding: 6px 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .stat-card {
+        padding: 16px 12px;
+    }
+
+    .stat-number {
+        font-size: 1.2rem;
+    }
+
+    .stat-label {
+        font-size: 0.7rem;
+    }
+
+    /* Section headers */
+    .section-header {
+        margin-bottom: 32px;
+    }
+
+    .section-title {
+        font-size: 1.6rem;
+    }
+
+    .section-desc {
+        font-size: 0.9rem;
+        padding: 0 16px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 40px 0 24px;
+        margin-top: 40px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+        margin-bottom: 32px;
+    }
+
+    .footer-links a {
+        font-size: 0.9rem;
+        padding: 6px 0;
+    }
+
+    /* Theme button */
+    .theme-btn {
+        top: 12px;
+        right: 12px;
+        width: 38px;
+        height: 38px;
+        z-index: 1001;
+    }
+
+    /* About page */
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .mission-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .coverage-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Roadmap */
+    .roadmap-title {
+        font-size: 1.8rem;
+    }
+
+    .phase-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+        padding: 24px 20px;
+    }
+
+    .phase-info h2 {
+        font-size: 1.3rem;
+    }
+
+    .phase-modules {
+        padding: 20px;
+    }
+
+    .mod-card {
+        padding: 18px;
+    }
+
+    .mod-card h3 {
+        font-size: 1rem;
+    }
+
+    .rp-item {
+        padding: 6px 10px;
+    }
+
+    .rp-icon {
+        width: 32px;
+        height: 32px;
+    }
+
+    .rp-name {
+        font-size: 0.6rem;
+    }
+
+    /* Projects */
+    .projects-title {
+        font-size: 1.8rem;
+    }
+
+    .category-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-stats {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .stat-item {
+        border-bottom: 1px solid var(--border);
+        padding: 12px 0;
+    }
+
+    .stat-item:last-child {
+        border-bottom: none;
+    }
+
+    /* Why Us */
+    .why-title {
+        font-size: 2rem;
+    }
+
+    .reasons-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .stats-banner {
+        flex-direction: column;
+        gap: 24px;
+        padding: 32px 24px;
+    }
+
+    .stats-banner-divider {
+        width: 80%;
+        height: 1px;
+    }
+
+    .different-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Tech & Outcomes */
+    .tech-title {
+        font-size: 1.8rem;
+    }
+
+    .tech-item {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+
+    .outcomes-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .outcome-card {
+        padding: 14px 20px;
+        font-size: 0.9rem;
+    }
+
+    /* Contact */
+    .contact-title {
+        font-size: 1.8rem;
+    }
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .contact-card {
+        padding: 28px 20px;
+    }
+
+    .contact-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.6rem;
+    }
+
+    /* CTA */
+    .cta-card {
+        padding: 32px 20px;
+    }
+
+    .cta-card h2 {
+        font-size: 1.3rem;
+    }
+}
+
+/* ============================================
+   SMALL MOBILE (max-width: 480px)
+   ============================================ */
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+    }
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .stat-card {
+        padding: 14px 12px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: left;
+    }
+
+    .stat-number {
+        font-size: 1.1rem;
+        margin-bottom: 0;
+    }
+
+    .bottom-link {
+        padding: 4px 8px;
+        font-size: 0.6rem;
+    }
+
+    .bottom-link i {
+        font-size: 1rem;
+    }
+}
+
+/* ============================================
+   MOBILE LANDSCAPE (max-height: 500px)
+   ============================================ */
+
+@media (max-width: 768px) and (max-height: 500px) {
+    .hero-section {
+        padding: 20px 0 40px;
+    }
+
+    .hero-title {
+        font-size: 1.4rem;
+    }
+
+    .stats-section {
+        padding: 30px 0;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ============================================
+   DESKTOP LARGE (min-width: 1440px)
+   ============================================ */
+
+@media (min-width: 1440px) {
+    .container {
+        max-width: 1280px;
+    }
+
+    .hero-title {
+        font-size: 3.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .section-title {
+        font-size: 3rem;
+    }
+}
+
+/* ============================================
+   HIDE BOTTOM NAV ON DESKTOP
+   ============================================ */
+
+@media (min-width: 769px) {
+    .bottom-nav {
+        display: none;
+    }
+}
+
+/* ============================================
+   PRINT STYLES
+   ============================================ */
+
+@media print {
+
+    .sidebar,
+    .mob-header,
+    .bottom-nav,
+    .theme-btn,
+    .footer-social {
+        display: none !important;
+    }
+
+    .main {
+        margin-left: 0 !important;
+        padding-top: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .section {
+        padding: 20px;
+        page-break-inside: avoid;
+    }
+
+    .card,
+    .stat-card {
+        border: 1px solid #ccc;
+        break-inside: avoid;
+    }
+}

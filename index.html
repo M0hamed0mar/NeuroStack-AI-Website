@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroStack | AI Engineering Diploma - Home</title>
+    <meta name="description"
+        content="Master Artificial Intelligence from scratch to Agentic AI systems. Build real-world AI projects with ML, Deep Learning, LLMs, RAG, and AI Agents.">
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- FontAwesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+        <i class="fa-regular fa-sun theme-sun"></i>
+        <i class="fa-regular fa-moon theme-moon"></i>
+    </button>
+
+    <!-- Components will be loaded here -->
+    <div id="sidebar"></div>
+    <div id="mobileHeader"></div>
+    <div id="bottomNav"></div>
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <i class="fa-solid fa-brain"></i>
+                        <span>AI Engineering Diploma</span>
+                    </div>
+                    <h1 class="hero-title">Master <span class="gradient-text">Artificial Intelligence</span> From
+                        Scratch to Agentic AI Systems</h1>
+                    <p class="hero-subtitle">Build real-world AI systems using Machine Learning, Deep Learning, LLMs,
+                        RAG Systems, and AI Agents through a complete hands-on diploma roadmap.</p>
+                    <div class="hero-buttons">
+                        <a href="pages/roadmap.html" class="btn btn-primary">
+                            Explore Roadmap
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                        <a href="https://wa.me/201220426463" target="_blank" class="btn btn-outline">
+                            Enroll Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+            <div class="container">
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">250+</div>
+                        <div class="stat-label">Learning Hours</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">12</div>
+                        <div class="stat-label">Professional Modules</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">20+</div>
+                        <div class="stat-label">AI Projects</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">0 → Pro</div>
+                        <div class="stat-label">Beginner to Advanced</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">Gen AI</div>
+                        <div class="stat-label">Generative AI Focus</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">Real</div>
+                        <div class="stat-label">World Applications</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <div id="footer"></div>
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+
+    <!-- Load components -->
+    <script>
+        // Load sidebar component
+        fetch('components/sidebar.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('sidebar').innerHTML = data);
+
+        // Load mobile header component
+        fetch('components/mobile-header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('mobileHeader').innerHTML = data);
+
+        // Load bottom navigation component
+        fetch('components/bottom-nav.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('bottomNav').innerHTML = data);
+
+        // Load footer component
+        fetch('components/footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+    </script>
+</body>
+
+</html>

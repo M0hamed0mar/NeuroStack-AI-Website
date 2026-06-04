@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuroStack | Tech Stack & Outcomes - What You'll Learn</title>
+    <meta name="description"
+        content="Master industry-standard tools: Python, TensorFlow, PyTorch, LangChain, and more. Build AI chatbots, RAG systems, AI agents, and production-ready applications.">
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+
+<body>
+
+    <button class="theme-btn" id="themeBtn" aria-label="Toggle theme">
+        <i class="fa-regular fa-sun theme-sun"></i>
+        <i class="fa-regular fa-moon theme-moon"></i>
+    </button>
+
+    <div id="sidebar"></div>
+    <div id="mobileHeader"></div>
+    <div id="bottomNav"></div>
+
+    <main class="main">
+
+        <section class="tech-header">
+            <div class="container">
+                <div class="tech-header-content">
+                    <div class="section-label">
+                        <i class="fa-solid fa-microchip"></i>
+                        <span>Technologies</span>
+                    </div>
+                    <h1 class="tech-title">Technology <span class="gradient-text">Stack</span></h1>
+                    <p class="tech-subtitle">Industry-standard tools and frameworks</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-stack">
+            <div class="container">
+                <div class="tech-grid">
+                    <div class="tech-item"><i class="fa-brands fa-python"></i> Python</div>
+                    <div class="tech-item"><i class="fa-solid fa-calculator"></i> NumPy</div>
+                    <div class="tech-item"><i class="fa-solid fa-table"></i> Pandas</div>
+                    <div class="tech-item"><i class="fa-solid fa-chart-line"></i> Matplotlib</div>
+                    <div class="tech-item"><i class="fa-solid fa-chart-simple"></i> Seaborn</div>
+                    <div class="tech-item"><i class="fa-solid fa-chart-scatter"></i> Plotly</div>
+                    <div class="tech-item"><i class="fa-solid fa-brain"></i> Scikit-learn</div>
+                    <div class="tech-item"><i class="fa-brands fa-python"></i> TensorFlow</div>
+                    <div class="tech-item"><i class="fa-brands fa-python"></i> PyTorch</div>
+                    <div class="tech-item"><i class="fa-regular fa-eye"></i> OpenCV</div>
+                    <div class="tech-item"><i class="fa-regular fa-message"></i> Hugging Face</div>
+                    <div class="tech-item"><i class="fa-solid fa-microchip"></i> OpenAI APIs</div>
+                    <div class="tech-item"><i class="fa-solid fa-microchip"></i> Groq APIs</div>
+                    <div class="tech-item"><i class="fa-solid fa-link"></i> LangChain</div>
+                    <div class="tech-item"><i class="fa-solid fa-diagram-project"></i> LangGraph</div>
+                    <div class="tech-item"><i class="fa-solid fa-database"></i> ChromaDB</div>
+                    <div class="tech-item"><i class="fa-solid fa-database"></i> Vector DBs</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="outcomes-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-label">Results</span>
+                    <h2 class="section-title">What You Will Be Able to Build</h2>
+                </div>
+                <div class="outcomes-grid">
+                    <div class="outcome-card"><i class="fa-regular fa-comment"></i><span>AI Chatbots</span></div>
+                    <div class="outcome-card"><i class="fa-regular fa-file-lines"></i><span>NLP Systems</span></div>
+                    <div class="outcome-card"><i class="fa-regular fa-eye"></i><span>Computer Vision Apps</span></div>
+                    <div class="outcome-card"><i class="fa-solid fa-thumbs-up"></i><span>Recommendation Systems</span>
+                    </div>
+                    <div class="outcome-card"><i class="fa-solid fa-database"></i><span>RAG Pipelines</span></div>
+                    <div class="outcome-card"><i class="fa-solid fa-robot"></i><span>AI Agents</span></div>
+                    <div class="outcome-card"><i class="fa-solid fa-diagram-project"></i><span>Multi-Agent
+                            Workflows</span></div>
+                    <div class="outcome-card"><i class="fa-solid fa-gear"></i><span>AI Automation</span></div>
+                    <div class="outcome-card"><i class="fa-solid fa-cloud-arrow-up"></i><span>Production AI Apps</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="tech-cta">
+            <div class="container">
+                <div class="cta-card">
+                    <h2>Ready to Master These Technologies?</h2>
+                    <p>Join NeuroStack and gain hands-on experience with the latest AI tools</p>
+                    <a href="https://wa.me/201220426463" target="_blank" class="btn btn-primary">
+                        Enroll Now
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <div id="footer"></div>
+    </main>
+
+    <script src="../js/theme.js"></script>
+    <script src="../js/navigation.js"></script>
+    <script src="../js/animations.js"></script>
+    <script src="../js/main.js"></script>
+
+    <script>
+        fetch('../components/sidebar.html').then(r => r.text()).then(d => document.getElementById('sidebar').innerHTML = d);
+        fetch('../components/mobile-header.html').then(r => r.text()).then(d => document.getElementById('mobileHeader').innerHTML = d);
+        fetch('../components/bottom-nav.html').then(r => r.text()).then(d => document.getElementById('bottomNav').innerHTML = d);
+        fetch('../components/footer.html').then(r => r.text()).then(d => document.getElementById('footer').innerHTML = d);
+    </script>
+</body>
+
+</html>
