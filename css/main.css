@@ -23,6 +23,8 @@
 @import url('pages/tech-outcomes.css');
 @import url('pages/contact.css');
 @import url('pages/why-us.css');
+@import url('pages/feedbacks.css');
+/* Added new feedbacks page styles */
 
 /* 6. Responsive styles (must be last) */
 @import url('responsive.css');

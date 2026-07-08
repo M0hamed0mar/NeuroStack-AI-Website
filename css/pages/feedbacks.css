@@ -1,0 +1,173 @@
+/* ============================================
+   NEUROSTACK - FEEDBACKS PAGE STYLES
+   Masonry grid, frames, and lightbox
+   ============================================ */
+
+/* ============================================
+   FEEDBACKS HERO
+   ============================================ */
+
+.feedbacks-hero {
+    padding: 100px 0 40px;
+    background: radial-gradient(ellipse at 70% 30%, var(--glow) 0%, transparent 70%);
+}
+
+.feedbacks-hero-content {
+    text-align: center;
+}
+
+.feedbacks-title {
+    font-family: var(--font-display);
+    font-size: 2.8rem;
+    font-weight: 800;
+    line-height: 1.2;
+    color: var(--text);
+    margin-top: 20px;
+}
+
+.feedbacks-subtitle {
+    font-size: 1rem;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 16px auto 0;
+}
+
+/* ============================================
+   FEEDBACKS GRID SECTION
+   ============================================ */
+
+.feedbacks-grid-section {
+    padding: 20px 0 80px;
+    background: var(--bg);
+}
+
+/* 2-Column Masonry-style Grid */
+.feedbacks-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: start;
+}
+
+/* ============================================
+   FEEDBACK FRAME (The Purple Border)
+   ============================================ */
+
+.feedback-frame {
+    background: var(--card);
+    border: 2px solid var(--primary);
+    border-radius: var(--radius-lg);
+    padding: 12px;
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-fast);
+    cursor: pointer;
+    overflow: hidden;
+    position: relative;
+}
+
+.feedback-frame:hover {
+    transform: translateY(-4px);
+    border-color: var(--primary-light);
+    box-shadow: var(--shadow-lg);
+}
+
+.feedback-frame img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: var(--radius-sm);
+    transition: transform var(--transition-normal);
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+.feedback-frame:hover img {
+    transform: scale(1.01);
+}
+
+/* ============================================
+   LIGHTBOX (Pop-up Viewer)
+   ============================================ */
+
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    backdrop-filter: blur(8px);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity var(--transition-normal);
+}
+
+.lightbox-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: var(--radius-md);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    object-fit: contain;
+    transform: scale(0.95);
+    transition: transform var(--transition-slow);
+}
+
+.lightbox-overlay.active .lightbox-content {
+    transform: scale(1);
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 300;
+    cursor: pointer;
+    transition: color var(--transition-fast);
+    line-height: 1;
+}
+
+.lightbox-close:hover {
+    color: var(--primary-light);
+}
+
+/* ============================================
+   FEEDBACKS PAGE RESPONSIVE
+   ============================================ */
+
+@media (max-width: 1024px) {
+    .feedbacks-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .feedbacks-title {
+        font-size: 1.8rem;
+    }
+
+    .feedbacks-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .feedback-frame {
+        padding: 8px;
+    }
+
+    .lightbox-close {
+        top: 20px;
+        right: 20px;
+        font-size: 2.5rem;
+    }
+}
