@@ -149,8 +149,8 @@
         <div id="footer"></div>
     </main>
 
-    <!-- Lightbox Overlay (Will be injected by JS) -->
-    <div id="lightbox-overlay" class="lightbox-overlay hidden">
+    <!-- Lightbox Overlay -->
+    <div id="lightbox-overlay" class="lightbox-overlay">
         <span class="lightbox-close">&times;</span>
         <img class="lightbox-content" id="lightbox-image" src="" alt="Enlarged feedback">
     </div>
@@ -164,6 +164,53 @@
         fetch('../components/mobile-header.html').then(r => r.text()).then(d => document.getElementById('mobileHeader').innerHTML = d);
         fetch('../components/bottom-nav.html').then(r => r.text()).then(d => document.getElementById('bottomNav').innerHTML = d);
         fetch('../components/footer.html').then(r => r.text()).then(d => document.getElementById('footer').innerHTML = d);
+    </script>
+
+    <!-- Lightbox JavaScript -->
+    <script>
+        (function initLightbox() {
+            const overlay = document.getElementById('lightbox-overlay');
+            const lightboxImage = document.getElementById('lightbox-image');
+            const closeBtn = document.querySelector('.lightbox-close');
+            const frames = document.querySelectorAll('.feedback-frame');
+
+            if (!overlay || !lightboxImage || !closeBtn || frames.length === 0) return;
+
+            // Open lightbox on frame click
+            frames.forEach(frame => {
+                frame.addEventListener('click', function() {
+                    const img = this.querySelector('img');
+                    if (img) {
+                        lightboxImage.src = img.src;
+                        lightboxImage.alt = img.alt;
+                        overlay.classList.add('active');
+                        document.body.style.overflow = 'hidden';
+                    }
+                });
+            });
+
+            // Close lightbox functions
+            const closeLightbox = function() {
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            };
+
+            closeBtn.addEventListener('click', closeLightbox);
+
+            // Close on overlay click (outside image)
+            overlay.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeLightbox();
+                }
+            });
+
+            // Close on Escape key
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape' && overlay.classList.contains('active')) {
+                    closeLightbox();
+                }
+            });
+        })();
     </script>
 </body>
 

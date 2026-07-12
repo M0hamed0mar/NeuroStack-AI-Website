@@ -1,10 +1,10 @@
 /* ============================================
    NEUROSTACK - ROADMAP PAGE STYLES
-   Timeline, phases, modules, progress bar
+   Timeline, phases, modules, progress bar & selection cards
    ============================================ */
 
 /* ============================================
-   ROADMAP HEADER
+   ROADMAP HEADER (Common to all roadmap pages)
    ============================================ */
 
 .roadmap-header {
@@ -33,7 +33,125 @@
 }
 
 /* ============================================
-   PROGRESS BAR (NO active state - only hover)
+   ROADMAP SELECTION SECTION (Main Hub Page)
+   ============================================ */
+
+.roadmap-selection-section {
+    padding: 40px 0 80px;
+    background: var(--bg);
+}
+
+.selection-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    align-items: stretch;
+}
+
+.selection-card {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-xl);
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+}
+
+.selection-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient);
+    opacity: 0;
+    transition: opacity var(--transition-normal);
+}
+
+.selection-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow-lg);
+}
+
+.selection-card:hover::before {
+    opacity: 1;
+}
+
+.selection-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.selection-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: var(--radius-md);
+    background: var(--glow);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    font-size: 1.6rem;
+}
+
+.selection-badge {
+    padding: 4px 14px;
+    border-radius: 100px;
+    background: var(--glow);
+    color: var(--primary);
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.selection-title {
+    font-family: var(--font-display);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 12px;
+}
+
+.selection-desc {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    line-height: 1.7;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+.selection-features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+    padding: 0;
+}
+
+.selection-features li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.selection-features li i {
+    color: var(--primary);
+    font-size: 0.9rem;
+}
+
+/* ============================================
+   PROGRESS BAR (Common to all detailed roadmaps)
    ============================================ */
 
 .roadmap-progress-section {
@@ -51,6 +169,7 @@
     border: 1px solid var(--border);
     border-radius: var(--radius-xl);
     box-shadow: var(--shadow-sm);
+    flex-wrap: wrap;
 }
 
 .rp-item {
@@ -61,7 +180,7 @@
     padding: 8px 16px;
     border-radius: var(--radius-md);
     transition: all var(--transition-fast);
-    cursor: pointer;
+    cursor: default;
 }
 
 .rp-item:hover {
@@ -97,6 +216,7 @@
     font-size: 0.7rem;
     color: var(--text-secondary);
     font-weight: 500;
+    text-align: center;
 }
 
 .rp-line {
@@ -107,7 +227,7 @@
 }
 
 /* ============================================
-   TIMELINE SECTION
+   TIMELINE SECTION (Common to all detailed roadmaps)
    ============================================ */
 
 .timeline-section {
@@ -267,6 +387,7 @@
     display: flex;
     flex-direction: column;
     gap: 6px;
+    padding: 0;
 }
 
 .topic-group li {
@@ -289,7 +410,7 @@
 }
 
 /* ============================================
-   ROADMAP CTA
+   ROADMAP CTA (Common to all roadmap pages)
    ============================================ */
 
 .roadmap-cta {
@@ -298,7 +419,7 @@
 }
 
 /* ============================================
-   ROADMAP PAGE RESPONSIVE
+   RESPONSIVE (For all roadmap pages)
    ============================================ */
 
 @media (max-width: 1024px) {
@@ -306,12 +427,16 @@
         font-size: 2.2rem;
     }
 
+    .selection-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+    }
+
     .mod-topics {
         grid-template-columns: 1fr;
     }
 
     .roadmap-progress {
-        flex-wrap: wrap;
         gap: 12px;
     }
 
@@ -323,6 +448,15 @@
 @media (max-width: 768px) {
     .roadmap-title {
         font-size: 1.8rem;
+    }
+
+    .selection-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .selection-card {
+        padding: 24px 20px;
     }
 
     .phase-header {
@@ -358,6 +492,25 @@
     }
 
     .rp-name {
+        font-size: 0.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .roadmap-progress {
+        padding: 16px;
+        gap: 8px;
+    }
+
+    .rp-item {
+        padding: 4px 8px;
+    }
+
+    .rp-name {
+        display: none;
+    }
+
+    .rp-num {
         font-size: 0.6rem;
     }
 }
